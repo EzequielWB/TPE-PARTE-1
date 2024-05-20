@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../(“C068 - A1 Fausto Andreozzi y Ezequiel Wilson Benito”)/css/style.css">
+    <title>Suscripcion</title>
+</head>
+<body>
+    
+    <header>
+        <div class="menuDesplegable"><a>MENU</a></div>
+            <div class="logo">   
+                 <h1>Panes Celestiales</h1>
+            </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+          <ul class="navegacion">
+                <li><a href="../(“C068 - A1 Fausto Andreozzi y Ezequiel Wilson Benito”)/index.html">Inicio</a></li>
+                <li><a href="../(“C068 - A1 Fausto Andreozzi y Ezequiel Wilson Benito”)/nosotros.html">Acerca de nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+      <article>
+        <div class="suscripcionContenedor">
+         <div class="formContenedor"  id="formulario">
+              <form class="formulario">
+                <label >Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"/>
+                <label >Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"/>
+                <label >Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono"/>
+                <label >Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Recibirá las últimas recetas"/>
+                <label >Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingrese su edad"/>
+                <label >Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección"/>
+              </form>
+        
+              <p>¿Es celiaco?</p>
+              <select>
+                <option value="no">No</option>
+                <option value="si">Sí</option>
+              </select>
+
+              <div class="captcha">
+                <p>Demuestre que es humano:</p>
+                <div id="captchaValores"></div>
+                <form class="formulario">
+                  <input type="text" id="respuesta" placeholder="Ingrese el resultado"/>
+                </form>
+                <input class="botonCaptcha" id="botonCaptcha" type="submit" value="Verificar"/>
+              </div>
+            </div>
+          </div>
+      </article>
+  </main>
+  <footer>
+    <div class="infoFooter">
+        <h5>Panes celestiales - 2024</h5>
+        <h5>Fausto Andreozzi - Ezequiel Wilson Benito</h5>
+        <h5>TUDAI</h5>
+    </div>
+</footer>
+
+</body>
+<script src="../(“C068 - A1 Fausto Andreozzi y Ezequiel Wilson Benito”)/javascript/script.js"></script>
+</html>

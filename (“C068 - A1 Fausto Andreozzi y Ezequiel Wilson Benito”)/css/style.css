@@ -1,0 +1,394 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    color: #2b251f;
+    display: flex;
+    flex-direction: column;
+    cursor: url(../img/cursor2.png), auto;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    height: 15%;
+    background-color: #724130;
+}
+
+.logo {
+    background-image: url(../img/logotipo.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+}
+
+
+.menuDesplegable {
+    color: white;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #724130;
+}
+
+.menuDesplegable a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Nanum+Gothic&display=swap');
+
+
+header h1 {
+    color: #f2f0e5;
+    text-transform: uppercase;
+    font-size: 30px;
+    opacity: 100%;
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/**************************/
+
+.menu {
+    width: 100%;
+    display: flex;
+    background-color: black; 
+}
+
+nav ul.navegacion {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+    background-color: #724130;
+}
+
+nav ul.navegacion.show {
+        display: flex;
+    }
+
+nav ul.navegacion li {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 15px 20px;
+}
+
+nav ul.navegacion li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul.navegacion li:hover {
+    background-color: #a0ae8b;
+}
+
+
+/**************************/
+
+main {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: rgb(243, 229, 202);
+    overflow: auto;
+}
+
+section{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.nosotros img {
+    width: 100%;
+    height: 100%;
+}
+
+.recetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.ingredientes-y-medidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.medidas h3{
+    text-align: center;
+}
+
+.medidas th, .medidas td {
+    background-color: #2b251f;
+    color: #be9c78;
+}
+
+.ingredientes, .medidas {
+    width: 48%;
+}
+
+
+.articuloRecetas {
+    border: 1px solid #a0ae8b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 1px;
+    max-height:min-content;
+}
+
+.articuloRecetas p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    font-size: small;
+}
+
+.articuloRecetas h4 {
+    display: none;
+}
+
+.articuloRecetas a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+.articuloRecetas img{
+    width: 80%;
+    height: 80%;
+    margin: 5px;
+}
+
+.suscripcionContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url(../img/fondoPan.png);
+    background-size: cover;
+    background-size: center;
+}
+
+.formContenedor {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #a58e75;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+}
+  
+  .formulario input {
+    margin: 5px 0px 5px 0px; 
+    background-color: #eccaa4;
+  }
+  
+  .captcha{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botonCaptcha {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #a58e75;
+    padding: 0px;
+    
+  }
+
+
+/**************************/
+
+footer{
+    min-height: 10%;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0ae8b;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+footer  h5 {
+    margin: 1px;
+}
+
+/**************************/
+
+@media (width >= 768px) {
+    
+    header {
+        height: 25%;
+    }
+
+    header h1 {
+        font-size: 75px;
+    }
+
+    nav {
+        margin: 0px;
+        padding: 0px;
+        height: 5%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        background-color: #a58e75;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+       
+    }
+    
+    nav ul li a {
+        color: #d3ba9f;
+        text-decoration: none;
+    }
+
+    .menuDesplegable {
+        display: none;
+     }
+
+    nav ul.navegacion {
+        display: flex;
+        flex-direction: row;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .nosotros {
+        margin: 0px 10px 0px 10px;
+        font-size: larger;
+    }
+
+    .imgNosotros {
+        display: none;
+    }
+    
+    
+    .articuloRecetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin: 1px;
+        max-height:min-content;
+    }
+
+    .articuloRecetas a {
+        width: auto ;
+    }
+
+    .articuloRecetas img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .articuloRecetas h4 {
+        display: flex;
+        font-size: larger;
+    }
+    
+    .articuloRecetas p {
+        font-size: medium;
+    }
+
+    .articuloRecetas p strong {
+        display: none;
+    }
+    
+
+    .infoFooter {
+        display: flex;
+        width: 100%;
+    }
+}
